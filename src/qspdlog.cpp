@@ -79,6 +79,8 @@ QSpdLog::QSpdLog(QWidget* parent)
 
 QSpdLog::~QSpdLog()
 {
+    for (auto toolbar : _toolbars)
+        toolbar->setParent(nullptr);
     std::static_pointer_cast<qt_logger_sink_mt>(_sink)->invalidate();
 }
 
