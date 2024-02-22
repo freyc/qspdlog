@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include <optional>
+#include <memory>
 
 namespace spdlog
 {
