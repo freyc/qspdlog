@@ -27,7 +27,7 @@ find_package(spdlog REQUIRED)
 
 add_subdirectory(include)
 
-link_libraries(Qt::Widgets spdlog::spdlog qspdlog::interface)
+link_libraries(Qt5::Widgets spdlog::spdlog qspdlog::interface)
 
 if(QSPDLOG_REPORT_COVERAGE)
   message("Building with coverage report")
